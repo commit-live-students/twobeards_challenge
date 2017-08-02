@@ -1,21 +1,31 @@
-![GitHub Logo](https://s3.ap-south-1.amazonaws.com/greyatom-social/logo.png)
+# Task 1: Create a module similar to `sklearn's` `datasets` module
 
-## Let's Get Rolling - Student Pre-Read
-Before this lesson, we recommend you go through
+Create a class called `my_sklearn`, which accepts following parameters
 
-## Learning Objectives
+* path: str (path to the csv file)
+* is_header: boolean (if the file has header)
+* target_variable: str (target variable)
+* feature_names: list (Not required if the file already has headers)
+* random_state: int (Optional)
 
+Define following methods.
 
-## Agenda
+*  ** `Representation` in the format: **
+    
+    `Path: path/to/the/file.csv`
+    
+    `feature variables: ['your', 'list', 'of', 'features', 'here']`
 
+    `target variable: your_target_variable `
+     
 
-## Slides
-@[gslides](1gEb00r1CyjxWignP0JC84UArH7qny05p-CQhMdBcu2o)
+*  **`load_data()` with following parameters:**
 
-## Download 
+    * feature_subset: list of features to be selected (Optional)
+    * train_size: float, fraction [0, 1] of data to be selected as training set (Optional)
+    * CV_subset= "train", "test" or "all"
 
-## Practice Exercise
+**Note:** 
 
-## Assignments
-
-## Post Reads
+* You can use `pandas`, `numpy` and `sklearn`'s `train_test_split` libraries.
+* Error handling
