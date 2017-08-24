@@ -20,7 +20,7 @@ class TestMy_sklearn(TestCase):
         # Checks target variable
         self.assertEqual(titanic.target_variable, 'Survived')
 
-        # Checks no of rows in split
+        # Checks feature names
         self.assertItemsEqual(titanic.feature_names, ['PassengerId', 'Pclass', 'Name', 'Sex', 'Age',
                                                       'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'
                                                       ]
