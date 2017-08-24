@@ -10,7 +10,7 @@ Create a class called `my_sklearn`, which accepts following parameters
 
 Define following methods.
 
-*  ** `Representation` in the format: **
+*  **`Representation` in the format:**
     
     `Path: path/to/the/file.csv`
     
