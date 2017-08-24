@@ -5,7 +5,7 @@ import pandas as pd, numpy as np
 class TestMy_sklearn(TestCase):
 
     def test_load_data(self):
-        titanic = my_sklearn(path="../data/titanic_train.csv", target_variable='Survived')
+        titanic = my_sklearn(path="./data/titanic_train.csv", target_variable='Survived')
 
         self.assertEqual(titanic.target_variable, 'Survived')
 
